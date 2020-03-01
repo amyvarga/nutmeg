@@ -1,4 +1,5 @@
 import React from "react";
+import copy from '../../container/feeCharges/copy';
 
 const TextInput = ({
   name,
@@ -21,11 +22,11 @@ const TextInput = ({
         onChange={onChange}
         aria-required={ariaRequired}
       />
-      <div role="alert" aria-labelledby={id} className={error ? "visible" : "hidden"}>
+      <div role="alert" aria-labelledby={id} className={`error ${error ? "visible" : "hidden"}`}>
         {error ?
           <p>{error}</p>
           :
-          <p>The alert will trigger when there is an error in the input</p>
+          <p>{copy.inputAriaAlert}</p>
         }
       </div>
     </div>

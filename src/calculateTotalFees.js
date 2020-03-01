@@ -3,6 +3,9 @@ const calculateTotalFees = (
   monthlyContribution,
   months
 ) => {
+  startingContribution = Number(startingContribution);
+  monthlyContribution = Number(monthlyContribution);
+  months = Number(months);
   const feeCharge = 0.0625 / 100;
   let accunulatedWealth = startingContribution;
   let totalFee = 0;

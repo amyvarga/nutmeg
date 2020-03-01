@@ -1,19 +1,23 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import copy from './copy';
 
 const Result = ({
-  ref,
   fee,
   currency,
   start,
   month,
   months
 }) => {
+  const alert = useRef();
+  useEffect(() => {
+    if (fee) alert.current.focus();
+  }, [fee]);
   return (
-    <div ref={ref} tabIndex="0" role="alert" aria-labelledby="form" className={`${fee ? "visible" : "hidden"} result`}>
+    <div ref={alert} tabIndex="0" role="alert" aria-labelledby="form" className={`${fee ? "visible" : "hidden"} result`}>
       {fee ?
-        <p> With a starting contribution of <strong><span>{currency}</span>{start}</strong> and a monthly contribution of <strong><span>{currency}</span>{month}</strong> we will deduct a total of <strong><span>{currency}</span>{fee}</strong> in a timeframe of <strong>{months}</strong> months.</p>
+        <p>With a starting contribution of <strong><span>{currency}</span>{start}</strong> and a monthly contribution of <strong><span>{currency}</span>{month}</strong> we will deduct a total of <strong><span>{currency}</span>{fee}</strong> in a timeframe of <strong>{months}</strong> months.</p>
         :
-        <p>The alert will trigger when the calculate button has successful submitted</p>
+        <p>{copy.inputAriaAlert}</p>
       }
     </div>
   )

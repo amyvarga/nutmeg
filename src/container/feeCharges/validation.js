@@ -1,17 +1,20 @@
+import copy from './copy';
+
+const minStart = Number(500);
+const minMonth = Number(10);
+
 const validate = ({ month, start }) => {
   const errors = {};
-  if (Number(start) < 500) {
-    errors.start = 'Minimum starting amount is £500';
+  if (Number(start) < minStart) {
+    errors.start = copy.errorStartMin;
   } else if (isNaN(start)) {
-    errors.start = 'Enter a number';
+    errors.start = copy.errorNum;
   }
-
-  if (Number(month) < 10) {
-    errors.month = 'Minimum monthly contribution is £10';
+  if (Number(month) < minMonth) {
+    errors.month = copy.errorMonthtMin;
   } else if (isNaN(month)) {
-    errors.month = 'Enter a number';
+    errors.month = copy.errorNum;
   }
-
   return errors;
 };
 

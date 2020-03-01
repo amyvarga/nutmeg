@@ -1,13 +1,13 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import TextInput from '../../components/form/TextInput';
 import SubmitButton from '../../components/form/SubmitButton';
 import Result from './Result';
 import validate from './validation';
 import calculateTotalFees from '../../calculateTotalFees';
 import { useFormik } from "formik";
+import copy from "./copy";
 
-const FeeCharges = props => {
-  const alertDiv = useRef();
+const FeeCharges = () => {
   const maxMonths = 36;
   const currency = "£";
   const [calc, setCalc] = useState({
@@ -23,30 +23,29 @@ const FeeCharges = props => {
     validate,
     onSubmit: ({ start, month }, { setSubmitting }) => {
       const myFees = calculateTotalFees(start, month, maxMonths).toFixed(2);
+
       setCalc({
         start: start,
         month: month,
         fee: myFees
       });
       setSubmitting(false);
-      alertDiv.current.focus();
     }
   });
   return (
-
     <div>
       <section role="form">
-        <h3>Fee charges</h3>
+        <h3>{copy.majorHeading}</h3>
         <form onSubmit={formik.handleSubmit}>
           <fieldset>
-            <legend>Calculate fee charges</legend>
-            <h4>Set your amounts</h4>
+            <legend>{copy.formLegend}</legend>
+            <h4>{copy.secondaryHeading}</h4>
             <TextInput
               name="start"
               id="start"
               value={formik.values.start}
               onChange={formik.handleChange}
-              label="Starting contribution"
+              label={copy.inputStart}
               ariaRequired="true"
               error={formik.errors.start}
             />
@@ -55,19 +54,18 @@ const FeeCharges = props => {
               id="month"
               value={formik.values.month}
               onChange={formik.handleChange}
-              label="Monthly contribution"
+              label={copy.inputMonth}
               ariaRequired="true"
               error={formik.errors.month}
             />
             <Result
-              ref={alertDiv}
               fee={calc.fee}
               currency={currency}
               start={calc.start}
-              monthly={calc.monthly}
+              month={calc.month}
               months={maxMonths}
             />
-            <SubmitButton text="Calculate" />
+            <SubmitButton text={copy.buttonSubmit} />
           </fieldset>
         </form>
       </section>

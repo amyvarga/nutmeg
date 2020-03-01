@@ -9,4 +9,16 @@ describe("Given calculateTotalFees", () => {
       calculateTotalFees(STARTING_CONTRIBUTION, MONTHLY_CONTRIBUTION, MONTHS)
     ).toEqual(108.56589934946604);
   });
+  describe("if arguments are string the calculation is correct", () => {
+    const STARTING_CONTRIBUTION = "500";
+    const MONTHLY_CONTRIBUTION = "250";
+    const MONTHS = 36;
+    it("should return the correct total fees after 36 months", () => {
+      expect(
+        calculateTotalFees(STARTING_CONTRIBUTION, MONTHLY_CONTRIBUTION, MONTHS)
+      ).toEqual(108.56589934946604);
+    });
+  });
 });
+
+
