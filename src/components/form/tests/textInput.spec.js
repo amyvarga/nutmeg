@@ -13,6 +13,7 @@ describe("Given TextInput", () => {
     label: "label",
     ariaRequired: true,
   };
+
   const setup = ({
     name, id, value, onChange, label, ariaRequired, error
   }) => {
@@ -32,6 +33,7 @@ describe("Given TextInput", () => {
       error: container.querySelector('div.error')
     };
   };
+
   beforeEach(() => {
     jest.resetAllMocks();
   });
@@ -45,6 +47,7 @@ describe("Given TextInput", () => {
     it("connects the input with the label", () => {
       expect(result.label.getAttribute('for')).toEqual(result.input.getAttribute('id'));
     });
+
     it("displays the text provided", () => {
       expect(result.label.innerHTML).toEqual(props.label);
     });
@@ -66,15 +69,19 @@ describe("Given TextInput", () => {
     it("a text input", () => {
       expect(result.input.getAttribute('type')).toEqual('text');
     });
+
     it("contains an aria-required attribute set to the boolean provided", () => {
       expect(result.input.getAttribute('aria-required')).toEqual((props.ariaRequired).toString());
     });
+
     it("contains a value attribute set to the value provided", () => {
       expect(result.input.getAttribute('value')).toEqual(props.value);
     });
+
     it("contains a name attribute set to the name provided", () => {
       expect(result.input.getAttribute('name')).toEqual(props.name);
     });
+
     it("contains an id attribute set to the id provided", () => {
       expect(result.input.getAttribute('id')).toEqual(props.id);
     });
@@ -90,12 +97,15 @@ describe("Given TextInput", () => {
         it("contains a role attribute whose value is alert", () => {
           expect(result.error.getAttribute('role')).toEqual('alert');
         });
+
         it("contains an aria-labelledby attribute whose values matches the input id", () => {
           expect(result.error.getAttribute('aria-labelledby')).toEqual(props.id);
         });
+
         it("contains class attribute whose value is hidden", () => {
           expect(result.error.getAttribute('class')).toContain('hidden');
         });
+
       });
       describe("Copy element", () => {
         it("contains the accessibility message provided ", () => {
@@ -106,6 +116,7 @@ describe("Given TextInput", () => {
     describe("When there is an error", () => {
       let result;
       const error = "error message";
+
       beforeAll(() => {
         const newProps = { ...props, error };
         result = setup(newProps);
@@ -116,6 +127,7 @@ describe("Given TextInput", () => {
           expect(result.error.getAttribute('class')).toContain('visible');
         });
       });
+
       describe("Copy element", () => {
         it("contains the error message provided ", () => {
           expect(result.error.querySelector('p').innerHTML).toEqual(error);

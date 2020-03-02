@@ -7,6 +7,7 @@ describe("Given submitButton", () => {
     const text = "Submit";
     const { container } = render(<SubmitButton text={text} />);
     const button = container.querySelector('button');
+
     expect(button.innerHTML).toEqual(text);
   });
 });

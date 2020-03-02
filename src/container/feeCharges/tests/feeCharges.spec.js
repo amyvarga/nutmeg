@@ -67,6 +67,7 @@ describe("Given FeeCharges", () => {
     beforeAll(async () => {
       result = setup();
       calculateTotalFees.mockImplementation(() => fee);
+
       act(() => {
         fireEvent.change(
           result.start,
@@ -78,12 +79,14 @@ describe("Given FeeCharges", () => {
         );
         fireEvent.click(result.button);
       });
+
       await wait(0);
     });
 
     it("calls calculateTotalFees with the correct parameters", async () => {
       expect(calculateTotalFees).toBeCalledWith(start, month, months);
     });
+
     it("updates Result component with the correct props", () => {
       expect(Result).toBeCalledWith({
         fee: Number(fee).toFixed(2),

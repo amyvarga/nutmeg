@@ -1,6 +1,6 @@
-import variables from '../../../globalStyles/variables';
 import styled from 'styled-components';
 import { grid } from 'styled-components-grid';
+import variables from '../../globalStyles/variables';
 
 export const SectionWrapper = styled.div`
   ${grid({})}
@@ -24,4 +24,14 @@ export const TextInputWrapper = styled.div`
 
 export const ButtonWrapper = styled.div`
   margin: 1em 0;
+`;
+
+export const ResultWrapper = styled.div`
+  p {
+    margin-bottom: 0;
+    @media (max-width: ${variables.breakpoints.xl}px) {
+      margin-top: 0;
+    }
+  } 
+  
 `;

@@ -5,6 +5,7 @@ const minMonth = Number(10);
 
 const validate = ({ month, start }) => {
   const errors = {};
+
   if (Number(start) < minStart) {
     errors.start = copy.errorStartMin;
   } else if (isNaN(start)) {
@@ -15,6 +16,7 @@ const validate = ({ month, start }) => {
   } else if (isNaN(month)) {
     errors.month = copy.errorNum;
   }
+
   return errors;
 };
 
