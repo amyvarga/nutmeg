@@ -1,31 +1,32 @@
-# nutmeg
+# NUTMEG
 
-## code structure
-### file structure
+## Code structure
+### File structure
 Container contains business logic, components do not.
 Components are reusable.
   
-## semantic markup
+## Semantic markup
 Correct use of HTML markup
 
-## styling
+## Styling
 https://styled-components.com/
 
 https://github.com/jameslnewell/styled-components-grid#readme
 
-## testing
+## Testing
 https://testing-library.com/
 
-## code quality
+## Code quality
+ESLint
 
-## accessibility standards
+## Accessibility standards
 Implements aria accessibility attributes
 Ensures that once a calculation has been submitted the results gain focus
 
-## pixel perfection
+## Pixel perfection
 References https://app.nutmeg.com/ for clues
 
-## level of effort
+## Level of effort
 Maximum :)
 
 ## level of documentation
