@@ -16,6 +16,9 @@ const GlobalStyle = createGlobalStyle`
     font-size: ${variables.typography.font_size_h4};
     margin-bottom: 0;
   }
+  p {
+    font-size: ${variables.typography.font_size_major};
+  }
   fieldset {
     border: 1px solid ${variables.colors.greyscale_mercury};
     border-radius: ${variables.forms.border_radius};

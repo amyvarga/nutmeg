@@ -20,12 +20,13 @@ const variables = {
   },
   typography: {
     font_size_primary: "1em",
-    font_size_minor: "0.75em",
+    font_size_major: "0.75em",
+    font_size_minor: "0.7em",
     font_size_h3: "1.2em",
     font_size_h4: "1em",
     line_height_primary: "1.4em",
     letter_spacing_wide: "0",
-    font_weight_minor: "200"
+    font_weight_minor: "200",
   },
   breakpoints: {
     xxs: 320,
