@@ -17,7 +17,7 @@ const Result = ({
       {fee ?
         <p>With a starting contribution of <strong><span>{currency}</span>{start}</strong> and a monthly contribution of <strong><span>{currency}</span>{month}</strong> we will deduct a total of <strong><span>{currency}</span>{fee}</strong> in a timeframe of <strong>{months}</strong> months.</p>
         :
-        <p>{copy.inputAriaAlert}</p>
+        <p>{copy.resultAriaAlert}</p>
       }
     </div>
   )

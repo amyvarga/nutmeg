@@ -115,10 +115,10 @@ describe("Given TextInput", () => {
         it("contains class attribute whose value is visible", () => {
           expect(result.error.getAttribute('class')).toContain('visible');
         });
-        describe("Copy element", () => {
-          it("contains the error message provided ", () => {
-            expect(result.error.querySelector('p').innerHTML).toEqual(error);
-          });
+      });
+      describe("Copy element", () => {
+        it("contains the error message provided ", () => {
+          expect(result.error.querySelector('p').innerHTML).toEqual(error);
         });
       });
     });

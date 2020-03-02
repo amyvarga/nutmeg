@@ -8,7 +8,8 @@ const copy = {
   errorMonthtMin: "Minimum monthly contribution is £10",
   inputAriaAlert: "The alert will trigger when there is an error in the input",
   errorNum: "Enter a number",
-  buttonSubmit: "Calculate"
+  buttonSubmit: "Calculate",
+  resultAriaAlert: "The alert will trigger when a calculation has been submitted",
 };
 
 export default copy;

@@ -7,8 +7,6 @@ import Result from './Result';
 import wait from 'waait';
 
 jest.mock('../../calculateTotalFees');
-
-
 jest.mock('./Result', () => jest.fn(() => null));
 
 describe("Given FeeCharges", () => {
