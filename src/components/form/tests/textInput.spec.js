@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import TextInput from './TextInput';
-import copy from '../../container/feeCharges/copy';
+import TextInput from '../TextInput';
+import copy from '../../../container/feeCharges/copy';
 
 describe("Given TextInput", () => {
   const { inputAriaAlert } = copy;
@@ -29,7 +29,7 @@ describe("Given TextInput", () => {
     return {
       label: container.querySelector('label'),
       input: container.querySelector('input'),
-      error: container.querySelector('.error')
+      error: container.querySelector('div.error')
     };
   };
   beforeEach(() => {

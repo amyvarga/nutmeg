@@ -1,10 +1,12 @@
 import React from "react";
+import Button from './styles/submitButton';
 
 const SubmitButton = ({
   text
 }) => {
+
   return (
-    <button type="submit">{text}</button>
+    <Button type="submit">{text}</Button>
   )
 }
 

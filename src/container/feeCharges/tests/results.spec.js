@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Result from './Result';
-import copy from '../../container/feeCharges/copy';
+import Result from '../Result';
+import copy from '../copy';
 
 describe("Given Result", () => {
   const { resultAriaAlert } = copy;

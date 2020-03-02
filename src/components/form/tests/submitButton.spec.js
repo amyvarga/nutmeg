@@ -1,6 +1,6 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import SubmitButton from './SubmitButton';
+import React from "react";
+import { render } from "@testing-library/react";
+import SubmitButton from "../SubmitButton";
 
 describe("Given submitButton", () => {
   it("displays the text provided", () => {

@@ -1,5 +1,6 @@
 import React from "react";
 import copy from '../../container/feeCharges/copy';
+import { Input, Label, Wrapper, InputWrapper, InputError, Currency, CurrencyWrapper } from './styles/textInput';
 
 const TextInput = ({
   name,
@@ -8,28 +9,37 @@ const TextInput = ({
   onChange,
   label,
   ariaRequired,
-  error
+  error,
+  currency
 }) => {
   return (
-    <div className="form-group">
-      <label htmlFor={id}>{label}</label>
-      <input
-        className="form-control"
-        name={name}
-        id={id}
-        type="text"
-        value={value}
-        onChange={onChange}
-        aria-required={ariaRequired}
-      />
-      <div role="alert" aria-labelledby={id} className={`error ${error ? "visible" : "hidden"}`}>
-        {error ?
-          <p>{error}</p>
-          :
-          <p>{copy.inputAriaAlert}</p>
-        }
+    <Wrapper>
+      <div>
+        <Label htmlFor={id}>{label}</Label>
+        <InputWrapper>
+          <CurrencyWrapper hasError={!!error} >
+            <Currency>{currency}</Currency>
+          </CurrencyWrapper>
+          <Input
+            hasError={!!error}
+            className='form-control'
+            name={name}
+            id={id}
+            type="text"
+            value={value}
+            onChange={onChange}
+            aria-required={ariaRequired}
+          />
+        </InputWrapper>
+        <div role="alert" aria-labelledby={id} className={`error ${error ? "visible" : "hidden"}`}>
+          {error ?
+            <InputError>{error}</InputError>
+            :
+            <p>{copy.inputAriaAlert}</p>
+          }
+        </div>
       </div>
-    </div>
+    </Wrapper>
   )
 };
 

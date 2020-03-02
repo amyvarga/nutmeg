@@ -6,6 +6,9 @@ import validate from './validation';
 import calculateTotalFees from '../../calculateTotalFees';
 import { useFormik } from "formik";
 import copy from "./copy";
+import { ThemeProvider } from 'styled-components';
+import variables from '../../globalStyles/variables';
+import { Section, TextInputWrapper, ButtonWrapper, SectionWrapper } from './styles/feeCharges';
 
 const FeeCharges = () => {
   const maxMonths = 36;
@@ -33,43 +36,51 @@ const FeeCharges = () => {
     }
   });
   return (
-    <div>
-      <section role="form">
-        <h3>{copy.majorHeading}</h3>
-        <form onSubmit={formik.handleSubmit}>
-          <fieldset>
-            <legend>{copy.formLegend}</legend>
-            <h4>{copy.secondaryHeading}</h4>
-            <TextInput
-              name="start"
-              id="start"
-              value={formik.values.start}
-              onChange={formik.handleChange}
-              label={copy.inputStart}
-              ariaRequired="true"
-              error={formik.errors.start}
-            />
-            <TextInput
-              name="month"
-              id="month"
-              value={formik.values.month}
-              onChange={formik.handleChange}
-              label={copy.inputMonth}
-              ariaRequired="true"
-              error={formik.errors.month}
-            />
-            <Result
-              fee={calc.fee}
-              currency={currency}
-              start={calc.start}
-              month={calc.month}
-              months={maxMonths}
-            />
-            <SubmitButton text={copy.buttonSubmit} />
-          </fieldset>
-        </form>
-      </section>
-    </div >
+    <ThemeProvider theme={variables}>
+      <SectionWrapper>
+        <Section role="form">
+          <h3>{copy.majorHeading}</h3>
+          <form onSubmit={formik.handleSubmit}>
+            <fieldset>
+              <legend>{copy.formLegend}</legend>
+              <h4>{copy.secondaryHeading}</h4>
+              <TextInputWrapper>
+                <TextInput
+                  name="start"
+                  id="start"
+                  value={formik.values.start}
+                  onChange={formik.handleChange}
+                  label={copy.inputStart}
+                  ariaRequired="true"
+                  error={formik.errors.start}
+                  currency={currency}
+                />
+                <TextInput
+                  name="month"
+                  id="month"
+                  value={formik.values.month}
+                  onChange={formik.handleChange}
+                  label={copy.inputMonth}
+                  ariaRequired="true"
+                  error={formik.errors.month}
+                  currency={currency}
+                />
+              </TextInputWrapper>
+              <Result
+                fee={calc.fee}
+                currency={currency}
+                start={calc.start}
+                month={calc.month}
+                months={maxMonths}
+              />
+              <ButtonWrapper>
+                <SubmitButton text={copy.buttonSubmit} />
+              </ButtonWrapper>
+            </fieldset>
+          </form>
+        </Section>
+      </SectionWrapper>
+    </ThemeProvider>
   )
 }
 

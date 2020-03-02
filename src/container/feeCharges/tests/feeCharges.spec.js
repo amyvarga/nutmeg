@@ -1,13 +1,13 @@
 import React from 'react';
 import { render, fireEvent, act } from '@testing-library/react';
-import FeeCharges from './FeeCharges';
-import copy from './copy';
-import calculateTotalFees from '../../calculateTotalFees';
-import Result from './Result';
+import FeeCharges from '../FeeCharges';
+import copy from '../copy';
+import calculateTotalFees from '../../../calculateTotalFees';
+import Result from '../Result';
 import wait from 'waait';
 
-jest.mock('../../calculateTotalFees');
-jest.mock('./Result', () => jest.fn(() => null));
+jest.mock('../../../calculateTotalFees');
+jest.mock('../Result', () => jest.fn(() => null));
 
 describe("Given FeeCharges", () => {
   const setup = () => {
