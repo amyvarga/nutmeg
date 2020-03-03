@@ -1,9 +1,13 @@
 import variables from '../../../globalStyles/variables';
 import styled from 'styled-components';
-import { grid } from 'styled-components-grid';
 
 export const Wrapper = styled.div`
-  ${grid.unit({ size: { xl: 4 / 8 } })}
+  @media (min-width: ${variables.breakpoints.xl}px) {
+    flex-basis: 50%;
+  }
+  @media (max-width: ${variables.breakpoints.xl}px) {
+    flex-basis: 100%;
+  }
   @media (min-width: ${variables.breakpoints.xl}px) {
     :first-child {
       > div {
@@ -27,6 +31,7 @@ export const InputWrapper = styled.div`
 
 export const CurrencyWrapper = styled.div`
   border-bottom: 1px solid ${props => props.hasError ? variables.colors.error_light : variables.colors.greyscale_silver}};
+  transition: border-color ease-in-out 0.3s;
 `;
 
 export const Currency = styled.div`
@@ -54,7 +59,8 @@ export const Input = styled.input`
   font: inherit;
   font-family: ${variables.fonts.font_family_light};
   font-weight: ${variables.typography.font_weight_minor};
-  border-bottom: 1px solid${props => props.hasError ? variables.colors.error_light : variables.colors.greyscale_silver}};
+  border-bottom: 1px solid ${props => props.hasError ? variables.colors.error_light : variables.colors.greyscale_silver}};
+  transition: border-color ease-in-out 0.3s;
 `;
 
 export const InputError = styled.p`

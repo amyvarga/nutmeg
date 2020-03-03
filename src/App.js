@@ -4,7 +4,6 @@ import FeeCharges from "./container/feeCharges/FeeCharges";
 import GlobalStyle from "./globalStyles/globalStyle";
 import variables from './globalStyles/variables';
 
-
 class App extends Component {
   render() {
     return (

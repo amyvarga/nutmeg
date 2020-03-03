@@ -1,20 +1,30 @@
 import styled from 'styled-components';
-import { grid } from 'styled-components-grid';
 import variables from '../../globalStyles/variables';
 
 export const SectionWrapper = styled.div`
-  ${grid({})}
+  display: flex;
 `;
 
 export const Section = styled.section`
-  ${grid.unit({ size: { xxl: 4 / 8 } })};
+  @media (min-width: ${variables.breakpoints.xxl}px) {
+    flex-basis: 37.5%;
+  }
+  @media (min-width: ${variables.breakpoints.lg}px) and (max-width: ${variables.breakpoints.xxl}px) {
+    flex-basis: 60%;
+  }
+  @media (max-width: ${variables.breakpoints.lg}px) {
+    flex-basis: 100%;
+  }
   background: ${variables.colors.greyscale_wildsand};
   margin: 0 auto;
   padding: 1em 1em 4em 1em;
 `;
 
 export const TextInputWrapper = styled.div`
-  ${grid({})}
+  display: flex;
+  @media (max-width: ${variables.breakpoints.xl}px) {
+    flex-wrap: wrap;
+  }
   margin-top: 1em;
   p {
     margin-bottom: 0;
@@ -33,5 +43,4 @@ export const ResultWrapper = styled.div`
       margin-top: 0;
     }
   } 
-  
 `;

@@ -72,7 +72,7 @@ const FeeCharges = () => {
               months={maxMonths}
             />
             <ButtonWrapper>
-              <SubmitButton text={copy.buttonSubmit} />
+              <SubmitButton text={copy.buttonSubmit} error={formik.errors} />
             </ButtonWrapper>
           </fieldset>
         </form>
