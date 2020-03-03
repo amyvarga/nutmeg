@@ -16,7 +16,7 @@ Correct use of HTML markup
 ## Styling
 https://styled-components.com/
 
-https://github.com/jameslnewell/styled-components-grid#readme
+Uses flexbox
 
 ## Testing
 https://testing-library.com/
