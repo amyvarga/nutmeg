@@ -30,7 +30,7 @@ Implements aria accessibility attributes
 Ensures that once a calculation has been submitted the results paragraph receives focus
 
 ## Pixel perfection
-References https://app.nutmeg.com/ for clues
+References https://app.nutmeg.com/ and Nutmeg styleguide for consistency 
 
 ## Level of effort
 Maximum :)
