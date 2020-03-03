@@ -6,7 +6,7 @@ Container contains business logic, components do not.
 
 Components are reusable.
 
-### Form validation
+### Form
 https://github.com/jaredpalmer/formik
 
   
