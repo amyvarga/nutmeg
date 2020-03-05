@@ -9,6 +9,11 @@ Components are reusable.
 ### Form
 https://github.com/jaredpalmer/formik
 
+### React
+Uses renderProps to abstract business logic
+
+### SSR
+https://nextjs.org/  (form does not work with out JS)
   
 ## Semantic markup
 Correct use of HTML markup
@@ -16,13 +21,16 @@ Correct use of HTML markup
 ## Styling
 https://styled-components.com/
 
-Uses flexbox
+https://amzn.github.io/style-dictionary/#/
+
+Uses flexbox for grids
 
 ## Testing
 https://testing-library.com/
 
 ## Code quality
 ESLint
+PostCSS
 
 ## Accessibility standards
 Implements aria accessibility attributes
