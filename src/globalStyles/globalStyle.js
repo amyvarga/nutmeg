@@ -39,6 +39,9 @@ const GlobalStyle = createGlobalStyle`
     --size-typography-letter-spacing-xs: -0.05rem;
     --size-typography-font-weight-lite: 200rem;
   }
+  .App {
+    margin: 0;
+  }
   html {
     color: var(--color-base-greyscale-cod);
     font-size: var(--size-font-medium);
@@ -77,7 +80,16 @@ const GlobalStyle = createGlobalStyle`
   }
   *:focus {
     outline: none;
-    }
+  }
+  .noscript {
+    background-color: var(--color-base-error-light);
+    color: var(--color-base-basic);
+    font: inherit;
+    font-family: var(--font-base-family-light);
+    font-weight: var(--size-typography-font-weight-lite);
+    padding: var(--size-spacing-m);
+    text-align: center;
+  }
 `;
 
 export default GlobalStyle;

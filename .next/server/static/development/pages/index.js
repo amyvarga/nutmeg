@@ -132,19 +132,32 @@ class Index extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 10
       },
       __self: this
-    }), __jsx(_src_container_feeCharges_FeeCharges__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }), __jsx("noscript", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: this
+    }, __jsx("div", {
+      className: "noscript",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 11
+      },
+      __self: this
+    }, "You need to enable JavaScript to run this app.")), __jsx(_src_container_feeCharges_FeeCharges__WEBPACK_IMPORTED_MODULE_1__["default"], {
       maxMonths: "36",
       currency: "\xA3",
       render: props => __jsx(_src_container_feeCharges_feeChargesform__WEBPACK_IMPORTED_MODULE_2__["default"], _extends({}, props, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 13
         },
         __self: this
       })),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 12
       },
       __self: this
     }));
@@ -951,6 +964,9 @@ const GlobalStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobal
     --size-typography-letter-spacing-xs: -0.05rem;
     --size-typography-font-weight-lite: 200rem;
   }
+  .App {
+    margin: 0;
+  }
   html {
     color: var(--color-base-greyscale-cod);
     font-size: var(--size-font-medium);
@@ -989,7 +1005,16 @@ const GlobalStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobal
   }
   *:focus {
     outline: none;
-    }
+  }
+  .noscript {
+    background-color: var(--color-base-error-light);
+    color: var(--color-base-basic);
+    font: inherit;
+    font-family: var(--font-base-family-light);
+    font-weight: var(--size-typography-font-weight-lite);
+    padding: var(--size-spacing-m);
+    text-align: center;
+  }
 `;
 /* harmony default export */ __webpack_exports__["default"] = (GlobalStyle);
 

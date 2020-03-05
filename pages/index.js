@@ -8,6 +8,7 @@ class Index extends Component {
     return (
       <div className="App">
         <GlobalStyle />
+        <noscript><div className="noscript">You need to enable JavaScript to run this app.</div></noscript>
         <FeeCharges maxMonths="36" currency="£"
           render={props => <FeeChargesForm {...props} />}
         />
