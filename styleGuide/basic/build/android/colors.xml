@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly
+  Generated on Thu, 05 Mar 2020 16:46:34 GMT
+-->
+<resources>
+  <color name="color_base_basic">#ff000000</color>
+  <color name="color_base_nutmeg_primary">#ff2fb153</color>
+  <color name="color_base_nutmeg_dark">#ff23843e</color>
+  <color name="color_base_greyscale_cod">#ff1b1b1b</color>
+  <color name="color_base_greyscale_slate">#ff2e2e2e</color>
+  <color name="color_base_greyscale_mineshaft">#ff454545</color>
+  <color name="color_base_greyscale_boulder">#ff757575</color>
+  <color name="color_base_greyscale_sivler">#ffc9c9c9</color>
+  <color name="color_base_greyscale_mercury">#ffe6e6e6</color>
+  <color name="color_base_greyscale_wildsand">#fff7f7f7</color>
+  <color name="color_base_error_light">#ff00ff00</color>
+  
+</resources>

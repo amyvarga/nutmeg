@@ -1,0 +1,45 @@
+{
+  "color": {
+    "base": {
+      "basic": {
+        "value": "#FFFFFF"
+      },
+      "nutmeg": {
+        "primary": {
+          "value": "#2FB153"
+        },
+        "dark": {
+          "value": "#23843E"
+        }
+      },
+      "greyscale": {
+        "cod": {
+          "value": "#1B1B1B"
+        },
+        "slate": {
+          "value": "#2E2E2E"
+        },
+        "mineshaft": {
+          "value": "#454545"
+        },
+        "boulder": {
+          "value": "#757575"
+        },
+        "silver": {
+          "value": "#C9C9C9"
+        },
+        "mercury": {
+          "value": "#E6E6E6"
+        },
+        "wildsand": {
+          "value": "#F7F7F7"
+        }
+      },
+      "error": {
+        "light": {
+          "value": "#F67268"
+        }
+      }
+    }
+  }
+}

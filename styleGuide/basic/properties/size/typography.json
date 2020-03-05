@@ -1,0 +1,35 @@
+{
+  "size": {
+    "typography": {
+      "font_size": {
+        "xl": {
+          "value": "1.2em"
+        },
+        "l": {
+          "value": "1em"
+        },
+        "m": {
+          "value": "0.75em"
+        },
+        "s": {
+          "value": "0.7em"
+        }
+      },
+      "line_height": {
+        "m": {
+          "value": "1.4em"
+        }
+      },
+      "letter_spacing": {
+        "xs": {
+          "value": "-0.05"
+        }
+      },
+      "font_weight": {
+        "lite": {
+          "value": "200"
+        }
+      }
+    }
+  }
+}

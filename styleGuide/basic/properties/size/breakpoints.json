@@ -1,0 +1,27 @@
+{
+  "breakpoints": {
+    "devices": {
+      "xxs": {
+        "value": 320
+      },
+      "xs": {
+        "value": 480
+      },
+      "sm": {
+        "value": 568
+      },
+      "md": {
+        "value": 640
+      },
+      "lg": {
+        "value": 768
+      },
+      "xl": {
+        "value": 960
+      },
+      "xxl": {
+        "value": 1024
+      }
+    }
+  }
+}

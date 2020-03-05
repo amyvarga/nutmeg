@@ -1,5 +1,5 @@
 const variables = {
-  colors: {
+  /* colors: {
     basic: "#FFFFFF",
     nutmeg_primary: "#2FB153",
     nutmeg_dark: "#23843E",
@@ -27,7 +27,7 @@ const variables = {
     line_height_primary: "1.4em",
     letter_spacing_wide: "0",
     font_weight_minor: "200",
-  },
+  }, */
   breakpoints: {
     xxs: 320,
     xs: 480,
@@ -36,14 +36,14 @@ const variables = {
     lg: 768,
     xl: 960,
     xxl: 1024
-  },
+  }/* ,
   forms: {
     border_radius: "2px",
     input_height_primary: "2em"
   },
   spacing: {
     default: "1em"
-  }
+  } */
 };
 
 export default variables;

@@ -15,7 +15,7 @@ export const Section = styled.section`
   @media (max-width: ${variables.breakpoints.lg}px) {
     flex-basis: 100%;
   }
-  background: ${variables.colors.greyscale_wildsand};
+  background: var(--color-base-greyscale-wildsand);
   margin: 0 auto;
   padding: 1em 1em 4em 1em;
 `;

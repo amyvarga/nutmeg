@@ -9,5 +9,4 @@ const SubmitButton = ({ error, text }) => {
   );
 }
 
-
 export default SubmitButton;

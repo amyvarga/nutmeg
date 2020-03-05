@@ -1,0 +1,18 @@
+{
+  "font": {
+    "base": {
+      "family_light": {
+        "value": "'GothamSSm-Light', sans-serif"
+      },
+      "family_book": {
+        "value": "'GothamSSm-Book', sans-serif"
+      },
+      "family_medium": {
+        "value": "'GothamSSm-Medium', sans-serif"
+      },
+      "family_bold": {
+        "value": "'GothamSSm-Bold', sans-serif"
+      }
+    }
+  }
+}

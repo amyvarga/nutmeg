@@ -1,0 +1,18 @@
+{
+  "size": {
+    "forms": {
+      "border": {
+        "border_radius": {
+          "value": "2px"
+        }
+      },
+      "input": {
+        "input_height": {
+          "l": {
+            "value": "2em"
+          }
+        }
+      }
+    }
+  }
+}

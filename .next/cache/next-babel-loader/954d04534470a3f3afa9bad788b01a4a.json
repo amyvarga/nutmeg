@@ -1,0 +1,1 @@
+{"ast":null,"code":"import App from 'next/app';\nimport '../src/index.css';","map":{"version":3,"sources":["/Users/amyvarga/web/nutmeg/pages/_app.js"],"names":["App"],"mappings":"AAAA,OAAOA,GAAP,MAAgB,UAAhB;AACA,OAAO,kBAAP","sourcesContent":["import App from 'next/app';\nimport '../src/index.css';\n\n"]},"metadata":{},"sourceType":"module"}
