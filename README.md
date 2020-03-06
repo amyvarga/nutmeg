@@ -13,7 +13,7 @@ https://github.com/jaredpalmer/formik
 Uses renderProps to abstract business logic
 
 ### SSR
-https://nextjs.org/  (form does not work with out JS)
+https://nextjs.org/  Prerender static HTML at build time.  Form does not work without JS!
   
 ## Semantic markup
 Correct use of HTML markup
