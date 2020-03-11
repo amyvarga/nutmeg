@@ -1,4 +1,4 @@
-# NUTMEG
+# SPA simple form
 
 ## Code structure
 ### File structure
@@ -6,11 +6,11 @@ Container contains business logic, components do not.
 
 Components are reusable.
 
-### Form
+### Form validation
 https://github.com/jaredpalmer/formik
 
 ### React
-Uses renderProps to abstract business logic
+Uses renderProps to abstract business logic from components
 
 ### SSR
 https://nextjs.org/  Prerender static HTML at build time.  Form does not work without JS!
@@ -21,7 +21,7 @@ Correct use of HTML markup
 ## Styling
 https://styled-components.com/
 
-https://amzn.github.io/style-dictionary/#/
+Design system using CSS variables https://amzn.github.io/style-dictionary/#/ 
 
 Uses flexbox for grids
 
@@ -33,15 +33,4 @@ ESLint
 PostCSS
 
 ## Accessibility standards
-Implements aria accessibility attributes
-
-Ensures that once a calculation has been submitted the results paragraph receives focus
-
-## Pixel perfection
-References https://app.nutmeg.com/ and Nutmeg styleguide for consistency 
-
-## Level of effort
-Maximum :)
-
-## level of documentation
-Et voila!
+Implements aria accessibility attributes including aria-alert
